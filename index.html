@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="shortcut icon" href="images/교육책패비콘.png" type="image/x-icon" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+		<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+		<title>조선시대 역사이야기 체험</title>
+		
+	</head>
+
+	<body>
+		<!-- 네브바 시작 -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img class="me-2 m-0 rounded" height="40px" src="images/조선 마을.jpg" alt="그림">조선시대 속으로 </a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse " id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3">
+							<a class="nav-link" href="#evironment">조선시대배경</a>
+						</li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#character">등장인물</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="#story">이야기</a>
+						</li>
+                        
+                        <button class="nav-item btn btn-dark ms-5 me-3 mt-0.5" 
+                        data-bs-toggle="modal"  data-bs-target="#logIn">로 그 인</button>
+                        
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 네브바 끝 -->	
+
+        <!-- 캐로셀 섹션 시작 -->
+		<section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+			
+			<div class="carousel-inner">
+				
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				
+				<div class="carousel-item active c-item" data-bs-interval="3000">
+					<img src="images/배경1.jpg" class="d-block w-100 c-img" alt="Slide 1" />
+				</div>
+				<div class="carousel-item c-item"  data-bs-interval="3000">
+					<img src="images/배경2.jpg" class="d-block w-100 c-img" alt="Slide 2" />
+				</div>
+				<div class="carousel-item c-item"  data-bs-interval="3000">
+					<img src="images/배경3.jpg" class="d-block w-100 c-img" alt="Slide 3" />
+				</div>
+				<div class="carousel-caption top-0 mt-4">
+					<p class="mt-5 fs-3 text-uppercase">조선시대 이야기 속으로</p>
+					<h1 class="display-3 fw-bolder text-capitalize">INTO THE CHOSUN DYNASTY</h1>
+					<button class="btn btn-light px-4 py-2 fs-5 mt-5"  data-bs-toggle="modal" data-bs-target="#buttonConnect">
+					회원가입</button>
+          
+          <br><br>
+                    <div class="snsBox d-flex justify-content-end fs-5">
+                        <span class="follow">follow us -----------</span>
+                        <a href="https://story.kakao.com/"><i class="bi bi-browser-chrome text-light me-3"></i></a>
+                        <a href="https://blog.naver.com/"><i class="bi bi-pencil-square text-light me-3"></i></a>
+                        <a href="https://www.facebook.com/thub01"><i class="bi bi-facebook text-light me-3"></i></a>
+
+                    </div>
+
+				</div>
+				
+			</div>
+			
+			<button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev"></button>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">이전</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">다음</span>
+			</button>
+            
+		</section>
+		<!-- 캐로셀 섹션 끝 -->
+
+        <!-- 모달창 섹션 시작 -->
+		 <section class="modal fade" id="buttonConnect"  tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">회원 가입</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form id="submitform">
+							<!-- 이메일 -->
+                            <div class="form-floating mb-3">
+                                <input type="id" class="form-control" id="floatingInput" minlength="6" maxlength="15"  placeholder="6자 이상 쓰세요">
+                                <label for="floatingInput">I D</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingInput" minlength="6" maxlength="15" placeholder="6자 이상 쓰세요">
+                                <label for="floatingInput">password</label>
+                            </div>
+							<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+								<label for="floatingInput">이메일</label>
+							</div>
+                           
+														
+							<div class="form-floating">
+								<select class="form-select" name="" id="floatingSelect" aria-label="Floating label select example">
+									<option value="">여자 캐릭터</option>
+									<option value="">남자 캐릭터</option>
+									<option value="">어린이 캐릭터</option>
+									<option value="">노인 캐릭터</option>
+								</select>
+								<label for="floatingSelect">아바타 종류를 선택하세요</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button type="submit" form="submitform"  class="btn btn-primary">회원가입</button>
+
+						<!--버튼이 폼태그 바깥에 있을 경우 연동시켜주려면 폼에 아이디 주고 연동할 버튼 submit 타입으로 하고
+						버튼 안 form="연동할 폼아이디" 하면 된다. -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <section class="modal fade" id="logIn"  tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">회원 가입</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form id="submitform">
+							<!-- 이메일 -->
+                            <div class="form-floating mb-3">
+                                <input type="id" class="form-control" id="floatingInput" minlength="6" maxlength="15"  placeholder="6자 이상 쓰세요">
+                                <label for="floatingInput">I D</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingInput" minlength="6" maxlength="15" placeholder="6자 이상 쓰세요">
+                                <label for="floatingInput">password</label>
+                            </div>
+							<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+								<label for="floatingInput">이메일</label>
+							</div>
+                           
+														
+							<div class="form-floating">
+								<select class="form-select" name="" id="floatingSelect" aria-label="Floating label select example">
+									<option value=""></option>
+									<option value="">유튜브</option>
+									<option value="">사람들이 소개</option>
+									<option value="">기타</option>
+								</select>
+								<label for="floatingSelect">이 사이트를 어떻게 알게 되었나요?</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button type="submit" form="submitform"  class="btn btn-primary">로 그 인</button>
+						<!--버튼이 폼태그 바깥에 있을 경우 연동시켜주려면 폼에 아이디 주고 연동할 버튼 submit 타입으로 하고
+						버튼 안 form="연동할 폼아이디" 하면 된다. -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 모달창 섹션 끝 -->
+          <!-- 오버뷰섹션 시작 -->
+		<section class="overview d-flex align-items-center mb-5">
+			<div class="container-fluid " style="margin: 20px;">
+				<div class="fs-5 row">
+                    <h1 class="exh1 display-5 fw-bolder">조선시대 안으로</h1>
+                   
+					<!-- fs는 폰트사이즈 1이 가장 크다
+					 그리드 시스템은 부모요소의 class에 row 선언후 자식요쇼 col-6 12열중 6열 쓰겠다.
+					 이런식으로 쓴다.-->
+					<div class="exdiv col-lg-4 text-center">
+						<i class="bi-emoji-laughing me-2"></i>
+						주요 역사적 사건, 문화들을 다룬 조선시대의 삶을 이야기를 통해 체험할 수 있습니다.
+					</div>
+				
+				
+					
+				</div>
+			</div>
+		</section>
+
+        <section id="about" class="container py-3">
+            <div class="text-center py-2">
+              <a href="payment.html" class="btn btn-dark mb-5 fs-5 fw-bolder"   target="_blank">조선화폐사기(결제창)</a>
+                
+              <h5 class="fw-bolder text-uppercase">주인공</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatum!</p>
+            </div>
+            <!-- row 일때 col-md를 이미지4 글 7로 나눈다. -->
+            <div class="row mb-5">
+                
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img src="images/조선여자아이.jpg" alt="" class="card-img-top" >
+                    <br>
+                    <div class="card-body">
+                        <h5 class="card-title">당신의 이름</h5>
+                        <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus saepe ducimus
+                            mollitia magni pariatur enim nemo harum voluptate dicta quaerat.</p>
+                    </div>
+                </div>
+              </div>
+              <!-- 12인데 7+4 하면 1 남음 컬럼공백 중간에 줌offset-lg은 1만큼 띠어준다에 1 넣어야 함. -->
+              <div class="col-md-4 offset-lg-1">
+                <p class="lh-lg" >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda molestias inventore voluptatibus veritatis! Provident autem sit fugiat omnis totam architecto non ratione sunt dolorum ipsam doloremque impedit vitae, error ab et alias, hic mollitia harum corrupti neque quisquam pariatur possimus. Architecto quod ut facere ad nisi placeat fuga voluptatem. Expedita!
+
+                </p>
+                <p class="fw-bold fs-4">지식포인트:</p>
+                <p>독해력:</p>
+                <!-- 프로그레스 바 쓰는 법 알자 class="progress-bar -->
+                 
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-success" style="width:90%" >90%</div>
+                </div>
+                <p>수학:</p>
+                <div class="progress">
+                  <div class="progress-bar bg-info progress-bar-striped" style="width:65%">65%</div>
+                </div>
+                <p>사회:</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-danger" style="width: 30%">30%</div>
+                </div>
+                <p>경제,과학,가정:</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-warming" style="width: 60%">60%
+
+                  </div>
+                </div>
+                </div>
+              <div class="col-md-4 mb-3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, eius. Molestiae aspernatur hic quidem quis iure corrupti suscipit eveniet optio facere ducimus dignissimos dolorum porro esse aut dicta totam sed, possimus ipsa placeat quaerat assumenda eos. Voluptatem, ducimus! Neque ea obcaecati sint aperiam, velit error, impedit distinctio fuga modi nostrum dicta ab autem reprehenderit dolores nam quis atque eligendi dolor libero consectetur labore. Cumque eos accusantium quisquam itaque dolor, eum aut necessitatibus iste expedita eaque placeat optio quasi architecto suscipit omnis numquam illum exercitationem vero, iure sint.
+                </p>
+
+
+              </div>
+
+            </div>
+          </section>
+		<!-- 오버뷰섹션 끝 -->
+         <!-- 2번째 내브바 -->
+        <section id="story">
+            <ul class="nav nav-tabs justify-content-center nav-justified " id="myTab" role="tablist">
+                <li class="nav-item " role="presentation">
+                <button class="nav-link active fw-bolder fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">조선 초기 ▽</button>
+                </li>
+                <li class="nav-item " role="presentation">
+                <button class="nav-link fw-bolder fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">조선 중기 ▽</button>
+                </li>
+                <li class="nav-item " role="presentation">
+                <button class="nav-link fw-bolder fs-5" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">조선 말기 ▽</button>
+                </li>
+            </ul>
+        
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <section id="package" class="container py-5">
+                        <div class="text-center py-5">
+                        <h2 class="fw-bolder text-uppercase">조선 초기시대 이야기 속으로</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloribus?</p>
+                        </div>
+                        <div class="row pb-5">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                            <img src="images/돌격무사.png" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                                adipisci saepe et. Vero, labore enim.
+                                </p>
+                                <a href="story/one.html" class="btn btn-light">이야기 속으로</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                            <img src="images/성읍.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                                adipisci saepe et. Vero, labore enim.
+                                </p>
+                                <a href="story/two.html" class="btn btn-light">이야기 속으로</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                            <img src="images/숲.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                                adipisci saepe et. Vero, labore enim.
+                                </p>
+                                <a href="story/three.html" class="btn btn-light">이야기 속으로</a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>    
+                    </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <section id="package" class="container py-5">
+                        <div class="text-center py-5">
+                        <h2 class="fw-bolder text-uppercase">조선 중기시대 이야기 속으로</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloribus?</p>
+                        </div>
+                        <div class="row pb-5">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                            <img src="images/임진왜란 이전의 3국 상황.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                                adipisci saepe et. Vero, labore enim.
+                                </p>
+                                <a href="story/four.html" class="btn btn-light">이야기 속으로</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                            <img src="images/조선 마을.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                                adipisci saepe et. Vero, labore enim.
+                                </p>
+                                <a href="story/five.html" class="btn btn-light">이야기 속으로</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                            <img src="images/조선 사람들.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                                adipisci saepe et. Vero, labore enim.
+                                </p>
+                                <a href="story/six.html" class="btn btn-light">이야기 속으로</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>    
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <section id="package" class="container py-5">
+                    <div class="text-center py-5">
+                      <h2 class="fw-bolder text-uppercase">조선 말기시대 이야기 속으로</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloribus?</p>
+                    </div>
+                    <div class="row pb-5">
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                          <img src="images/조선 상소문.png" alt="" class="card-img-top" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                              adipisci saepe et. Vero, labore enim.
+                            </p>
+                            <a href="#" class="btn btn-light">이야기 속으로</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                          <img src="images/조선 총명한신하.jpg" alt="" class="card-img-top" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                              adipisci saepe et. Vero, labore enim.
+                            </p>
+                            <a href="#" class="btn btn-light">이야기 속으로</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                          <img src="images/조선 음악회.jpg" alt="" class="card-img-top" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center py-2">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at illum natus sequi explicabo,
+                              adipisci saepe et. Vero, labore enim.
+                            </p>
+                            <a href="#" class="btn-light">이야기 속으로</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>        
+            </div>
+        </section>
+
+ 
+
+
+
+        <!-- 푸터섹션 시작 -->
+		<footer class="bg-light py-5 mt-5">
+			<div class="container text-dark text-center">
+				<p class="display-6 fw-bolder mb-3">조선시대 이야기속으로</p>
+				<small>&copy; Copyright by me. All rights reserved.</small>
+			</div>
+		</footer>
+		<!-- 푸터섹션 끝 -->
+    </body>
+</html>

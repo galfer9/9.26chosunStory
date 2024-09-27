@@ -1,0 +1,26 @@
+
+/* 부모에게 플렉스 하니 직계만 영향 미치는 데 html에서 부트스트랩 그리드도 쓰고 있기에
+각 요소에 적용된 그리드는 우선 적용되고 있다. 
+항상 전체요소 마진 패딩 값 0으로 한 후에 html 작성하라. 각 요소도 높이가 디폴트값이 있으므로 height 직접
+설정하라. */
+body, header, div, h1, footer, p, ul, li{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* overflow는 스크롤바 없애고 싶을때 넘치는 것을 hidden하니깐 어떤 요소 안에 이미지 애니매이션 줄때
+    그 보더선을 덮어버리거나 넘치지 않고 애니메이션 줄때 쓴다.  */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+
+}
