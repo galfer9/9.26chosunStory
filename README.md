@@ -18,4 +18,4 @@
 + ✨(주의점: 깃허브에 올릴 폴더나 파일은 영어로 작성할 것. 한글은 오류날 수 있다.)
 
 이미지갤러리배포
-[배포](https://github.com/galfer9/1-9.26---------------.git)
+[배포](https://galfer9.github.io/9.26chosunStory/)
